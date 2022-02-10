@@ -33,7 +33,7 @@ int main(){
 	cout<<"sorted array:\n";
 	display(arr,6);
 	
-return 0;		
+return 0;	
 } 
 
 //complexity is O(n^2)
