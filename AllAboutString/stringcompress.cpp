@@ -32,4 +32,6 @@ int compress(vector<char>& chars){
 int main(){
     vector<char> ch{'a','a','b','b','b','c','c','c'}; //.......o/p is like {a,2,b,3,c,3} it returns 6.......
     cout<<compress(ch);
+
+    return 0;
 }
