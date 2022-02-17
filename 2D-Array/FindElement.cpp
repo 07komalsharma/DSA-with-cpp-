@@ -28,7 +28,6 @@ int main(){
         }
         cout<<endl;
     }
-
     int target;
     cout<<"enter no to search"<<endl;
     cin>>target;
