@@ -20,13 +20,13 @@ int main(){
          cout<<" ";
          space=space-1;
         }
-        //1st triangle print...
+    //1st triangle print...
       int star=n-row+1;
       while(star){
-         cout<<"*";
-         star--;
+        cout<<"*";
+        star--;
         }
-        //print 2nd......
+    //print 2nd......
       int start=n-row;
       while(start){
          cout<<"*";
