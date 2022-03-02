@@ -7,10 +7,10 @@ int moduloexpo(int x,int n,int m){
     while(n>0){
         if(n&1){
             //odd
-            res=((res)*(x)%m)%m;
+            res=(1LL*(res)*(x)%m)%m;   //1LL ->basically typecasting in long long
         }
-        x=((x)%m*(x)%m)%m;
-        n=n>>1;               //divide by 2...
+        x=(1LL*(x)%m*(x)%m)%m;
+        n=n>>1;               //divide by 2...or right shift
     }
     return res;
 }
