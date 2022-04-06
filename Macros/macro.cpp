@@ -7,6 +7,8 @@ int main(){
     int r = 5;
     double area = Pi * r * r;
     cout<<"area is : "<<area<<endl;
+
+    return 0;
 }
 //koi extra storage nhi li macro define krne me koi changes nhi honge like Pi=Pi+1 whatever
 //Pi replace hoga 3.14 se 
