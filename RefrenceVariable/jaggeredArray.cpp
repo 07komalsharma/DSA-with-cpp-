@@ -5,12 +5,12 @@ int main(){
 int rows;
     cout << "Enter no of rows of array: ";
     cin >> rows;
-    int *numbers = new int[rows]; /// array to store no of columns in each row
-    int **array=new int*[rows];   /// jagged array
+    int *numbers = new int[rows]; // array to store no of columns in each row
+    int **array=new int*[rows];   // jagged array
 
     for(int i=0; i<rows; i++){
 
-        cout<< "Enter no of col in row"<< i<< ": ";
+        cout<< "Enter no of col in row"<< i<< ": ";     
         cin>> numbers[i];
         array[i]=new int[numbers[i]];
     }
