@@ -12,7 +12,6 @@ bool BinarySearch(int *arr,int s,int e,int k){
     cout<<endl;
     print(arr,s,e);
     //base case
-
     //element not found
     if(s>e){
         return false;
