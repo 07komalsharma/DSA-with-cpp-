@@ -19,7 +19,7 @@ int **arr=new int*[row];
 cout<<endl;
     for(int i=0;i<row;i++){
         for(int j=0;j<col;j++){
-            cout<<(rand() % 10)+1<<" "; 
+            cout<<(rand() % 100)+1<<" "; 
         }
         cout<<endl;
     }
