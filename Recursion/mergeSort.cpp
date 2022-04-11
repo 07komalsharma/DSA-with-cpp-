@@ -65,8 +65,8 @@ void mergeSort(int *arr,int s,int e){
 }
 
 int main(){
-    int arr[5]={2,5,1,6,9};
-    int n=5;
+    int arr[12]={2,5,1,6,9,4,11,14,10,15,23,21};
+    int n=12;
 
     mergeSort(arr,0,n-1);
     for(int i=0;i<n;i++){
