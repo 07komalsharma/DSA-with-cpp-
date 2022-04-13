@@ -31,6 +31,7 @@ int main(){
     vector<int> empty;
     generate(empty,0,nums);
 
+    
     for(auto subset : subsets){
       for(auto ele : subset){
           cout<<"["<<ele<<"]";
