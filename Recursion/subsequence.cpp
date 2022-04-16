@@ -28,5 +28,7 @@ int main(){
     for(int i=0;i<outputSize;i++){
         cout<<output[i]<<endl;
     }
+
+    
 return 0;
 }
