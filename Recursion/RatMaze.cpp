@@ -12,7 +12,6 @@ bool isSafe(int x,int y,int n,vector<vector<int>> visited,vector<vector<int>> &m
     }
 }
 
-
 void solve(vector<vector<int>> &m,int n,vector<string>& ans,int x,
            int y, vector<vector<int>> visited,string path){
 
