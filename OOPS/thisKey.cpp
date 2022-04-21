@@ -38,9 +38,7 @@ class Hero{
     void setLevel(char l){
         level=l;
 
-    }
-    
-
+    }   
 };
 
 int main(){
