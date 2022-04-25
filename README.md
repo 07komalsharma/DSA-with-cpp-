@@ -18,3 +18,5 @@ Subsequence problem: https://www.youtube.com/watch?v=OZiTiLDZJ60&t=5s
 PermutationCombination : https://www.tutorialcup.com/leetcode-solutions/permutations-leetcode-solution.htm
 
 OOPS : https://www.codingninjas.com/codestudio/guided-paths/basics-of-c/content/118817/offering/1382190
+
+Master's theorem all cases : https://www.gatevidyalay.com/masters-theorem-solving-recurrence-relations/
