@@ -99,7 +99,7 @@ int main(){
     InsertAtTail(tail,40);
     print(head);
 
-    InsertAtPosition(tail,head,4,55);
+    InsertAtPosition(tail,head,1,55);
     print(head);
 
     cout<<"head "<<head->data<<endl;
