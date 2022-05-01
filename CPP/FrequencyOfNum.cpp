@@ -19,4 +19,5 @@ int main(){
     cout<<"freq is "<<frequency(num,k)<<endl;
 
     return 0;
+    
 }
