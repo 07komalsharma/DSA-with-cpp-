@@ -1,0 +1,37 @@
+#include<iostream>
+using namespace std;
+
+class Node{
+  public:
+  int data;
+  Node* next;  
+
+  //constructor
+  Node(int data){
+      this->data=data;
+      this->next=NULL;
+  }
+};
+Node* SortedMerge(Node* a, Node* b)
+{
+    Node* result = NULL;
+     
+    /* Base cases */
+    if (a == NULL)
+        return(b);
+    else if (b == NULL)
+        return(a);
+     
+    /* Pick either a or b, and recur */
+    if (a->data <= b->data)
+    {
+        result = a;
+        result->next = SortedMerge(a->next, b);
+    }
+    else
+    {
+        result = b;
+        result->next = SortedMerge(a, b->next);
+    }
+    return(result);
+}
