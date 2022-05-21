@@ -23,6 +23,7 @@ void InsertAtTail(Node* &tail,int d){
     tail->next=temp; 
     tail=tail->next;
 } 
+//approach 1
 /*
 int getLength(Node* head){
     int len=0;
@@ -45,6 +46,7 @@ Node* getmiddle(Node* &head){
     return temp;
 }
 */
+//approach 2
 Node* getmiddle(Node* &head){         //doubt........
     if(head==NULL || head->next==NULL){
        return head;;
