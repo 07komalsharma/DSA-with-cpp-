@@ -42,25 +42,7 @@ void InsertAtPosition(Node* &head,int position,int d){
     nodeToInsert->next=temp->next;
     temp->next = nodeToInsert;
 }
-Node* getmiddle(Node* &head){         //doubt........
-    if(head==NULL || head->next==NULL){
-       return head;;
-    }
-    //2 nodes are there
-    if(head->next->next==NULL){
-        return head->next;
-    }
-    Node* slow=head;
-    Node* fast=head->next;
-    while(fast!=NULL){
-       fast=fast->next;
-       if(fast!=NULL){
-           fast=fast->next;
-       } 
-       slow=slow->next;
-    }
-    return slow;
-}
+
 //iterative approach
 
 /*
@@ -78,7 +60,7 @@ Node* Reverse(Node* head){
     return prev;
 
 }
-
+*/
 //recursive approach
 void reverse(Node* &head,Node* curr,Node* prev){
     if(curr==NULL){
@@ -98,7 +80,7 @@ Node* reverselinkedlist(Node* &head){
     return head;
     
 }
-*/
+
 void print(Node* &head){
     Node* temp=head;
     while(temp!=NULL){
@@ -123,7 +105,7 @@ int main(){
    InsertAtPosition(head,4,44);  
    print(head);
    
-   Node * reversehead = getmiddle(head);
+   Node * reversehead = reverselinkedlist(head);
    print(reversehead);
 
 
