@@ -67,8 +67,8 @@ int main(){
    InsertAtTail(tail,4);
    InsertAtTail(tail,5);
    InsertAtTail(tail,6);
-  cout<<"given LL : "<<endl;
-   print(head);
+    cout<<"given LL : "<<endl;
+    print(head);
     Node * ans = kReverse(head,2);
     cout<<"after k group reverse : "<<endl;
     print(ans);

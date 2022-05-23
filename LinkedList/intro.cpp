@@ -73,6 +73,26 @@ void print(Node* &head){
     cout<<endl;
 
 }
+
+bool isCircularList(Node* head){
+    if(head==NULL){
+        return true;
+    } 
+    if(head->next==NULL){
+        return false;
+    }
+    Node* temp=head->next;
+    while(temp!=NULL && temp!=head){
+        temp=temp->next;
+    }
+    if(temp==head){
+        return true;
+    }
+return false;
+
+}     
+
+
 int main(){
     //create new node
     Node* node1 = new Node(10);
@@ -104,6 +124,13 @@ int main(){
 
     cout<<"head "<<head->data<<endl;
     cout<<"tail "<<tail->data<<endl;
+
+    if(isCircularList(head)){
+        cout<<"linked list is circular"<<endl;
+    }
+    else{
+        cout<<"not circular"<<endl;
+    }
 
     return 0;
 }
