@@ -10,6 +10,7 @@ circular doubly ll
 */
 
 #include<iostream>
+#include<map>
 using namespace std;
 
 class Node{
@@ -93,6 +94,7 @@ return false;
 }     
 
 
+
 int main(){
     //create new node
     Node* node1 = new Node(10);
@@ -121,7 +123,7 @@ int main(){
 
     InsertAtPosition(tail,head,1,55);
     print(head);
-
+/*
     cout<<"head "<<head->data<<endl;
     cout<<"tail "<<tail->data<<endl;
 
@@ -131,6 +133,7 @@ int main(){
     else{
         cout<<"not circular"<<endl;
     }
-
+*/
+    
     return 0;
 }

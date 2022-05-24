@@ -1,4 +1,5 @@
 #include<iostream>
+#include<map>
 using namespace std;
 
 class Node{
@@ -123,6 +124,7 @@ int main(){
     insertNode(tail,5,7);
     print(tail);
 
+/*
     deleteNode(tail,7);
     print(tail);
 
@@ -132,7 +134,8 @@ int main(){
     else{
         cout<<"not circular"<<endl;
     }
-
+*/
+  
     return 0;
 }
   
