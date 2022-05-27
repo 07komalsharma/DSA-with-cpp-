@@ -50,7 +50,7 @@ Node* uniqueSortedList(Node* head){
 }
 int main(){
     Node* node1 = new Node(12);
-        Node* head=node1;
+    Node* head=node1;
     Node* tail=node1;
 
     InsertAtTail(tail,15);
