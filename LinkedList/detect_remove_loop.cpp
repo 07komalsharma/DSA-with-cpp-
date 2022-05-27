@@ -53,6 +53,54 @@ Node* Floyd_DetectLoop(Node*head){
     return NULL;
 }
 
-int main(){
+//starting node of loop 
+Node* getStartingNode(Node* head){
+    if(head=NULL){
+        return NULL;
 
+    }
+    Node* intersection=Floyd_DetectLoop(head);
+
+    if(intersection==NULL){
+        return NULL;
+    }
+    Node* slow =head;
+
+    while(slow!= intersection){
+        slow=slow->next;
+        intersection=intersection->next;
+    }
+    return slow;
+}
+
+Node* removeLoop(Node* head){
+    if(head==NULL)
+    return NULL;
+
+    Node* startOfLoop = getStartingNode(head);
+
+    if(startOfLoop==NULL){
+        return head;
+    }
+
+    Node* temp = startOfLoop;
+    
+    while(temp->next != startOfLoop){
+        temp=temp->next;
+    }
+    temp->next=NULL;
+
+
+}
+
+int main(){ 
+
+ Node* node1 = new Node(10);
+    Node* head=node1;
+
+Node * loopstart=getStartingNode(head);
+cout<<"loop starts at"<<loopstart->data<<endl;
+
+
+//print(head);
 }

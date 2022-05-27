@@ -107,8 +107,6 @@ int main(){
     /*
     cout<<"insert at start..."<<endl;
     print(head);
-    InsertAtHead(head,12);
-    print(head);
     InsertAtHead(head,15);
     print(head);
 
