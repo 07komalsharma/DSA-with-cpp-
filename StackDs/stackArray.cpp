@@ -14,6 +14,7 @@ void push(int x,int n){
     }
 }
 int main(){
+    int st[5];
 
     cout<<push(5,5);
     return 0;
