@@ -47,6 +47,7 @@ int findMinimumCost(string str){
 
 
 int main(){
+    
     string s ="{{{{";
     cout<<findMinimumCost(s);
 return 0;
