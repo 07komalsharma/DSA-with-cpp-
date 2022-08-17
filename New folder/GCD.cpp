@@ -8,7 +8,7 @@ int gcd(int a,int b){
         return b;
     }
     if(b==0){
-        return b;
+        return a;
     }
 
     while(a!=b){

@@ -49,7 +49,7 @@ class Solution{
         for(int i=0;i<n;i++){
             int l = heights[i];
             
-            if(next[i]= =-1){
+            if(next[i]==-1){
                 next[i] = n;
             }
             

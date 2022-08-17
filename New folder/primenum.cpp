@@ -18,7 +18,7 @@ int main()
    }
    if(FLAG == 1)
    {
-      cout<<"is Prime Number n;"<<endl;
+      cout<<"is Prime Number"<<endl;
    }
    else
    {
