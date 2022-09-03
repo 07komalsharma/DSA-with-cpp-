@@ -49,9 +49,9 @@ int Knapsack(int wt[],int val[],int W,int n){
 }
 
 int main(){
-    int val[]={60,100,120};
-    int wt[]={10,20,30};
-    int W=50;
+    int val[]={2,3,3};
+    int wt[]={2,2,2};
+    int W=6;
 
     int n=sizeof(val)/sizeof(val[0]);
 

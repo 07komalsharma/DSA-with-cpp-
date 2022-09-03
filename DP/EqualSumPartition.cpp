@@ -1,8 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-bool subsetSum(int arr[],int sum,int n){
-    //initialisation
+int IsSubsetSum(int arr[],int sum,int n){
     bool t[n+1][sum+1];
     for(int i=0;i<n+1;i++){
         for(int j=0;j<sum+1;j++){
@@ -13,6 +12,7 @@ bool subsetSum(int arr[],int sum,int n){
              t[i][j]==true; 
         }
     }
+
     t[0][0]=true;
 
         for(int i=1;i<n+1;i++){
@@ -27,13 +27,34 @@ bool subsetSum(int arr[],int sum,int n){
     }
     return t[n][sum];
 }
+
+bool findPartition(int arr[],int n){
+
+    int sum=0;
+    for(int i=0;i<n;i++){
+        sum=sum+arr[i];
+    }
+    if(sum%2!=0){
+        return false;
+    }
+    else{
+        return IsSubsetSum(arr,sum/2,n);
+    }
+
+    return true;
+}
+
 int main(){
-    int arr[]={ 7, 3, 2, 5, 8 };
-    int sum=18;
+    int arr[]={1, 5, 3};
     int n=sizeof(arr)/sizeof(arr[0]);
 
-    cout<<"present or not : " <<subsetSum(arr,sum,n)<<endl;
+    //function call
+    if(findPartition(arr,n)==true){
+        cout<<"Can be divided into subset of equal sum"<<endl;
+    }
+    else{
+        cout<<"Can't divided into equal sum partition"<<endl;
+    }
 
-return 0;
+    return 0;
 }
-///.............

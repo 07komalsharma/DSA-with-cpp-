@@ -33,9 +33,5 @@ int main(){
     string s;
     cin>>s;
     cout<<getMaxOccnCharacter(s)<<endl;
-
-
-
-
     return 0;
 }
