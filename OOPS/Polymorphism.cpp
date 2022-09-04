@@ -2,7 +2,6 @@
 using namespace std;
 
 //compile time polymorphism or static 
-
 //function overloading....
 /*
 class A{
@@ -23,8 +22,8 @@ int main(){
 }
 //if we change void to int in second function then we can't overload error occurs
 */
+//operator overloading...
 
-//operator overloading
 class B{
     public:
     int a;
