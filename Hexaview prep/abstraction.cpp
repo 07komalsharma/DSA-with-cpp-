@@ -19,9 +19,9 @@ class abstraction {
 };
 
 int main() {
-    abstraction obj;
-    obj.value(2, 4);
-    obj.display();
+    abstraction a1;
+    a1.value(2, 4);
+    a1.display();
 
   return 0;
 }
