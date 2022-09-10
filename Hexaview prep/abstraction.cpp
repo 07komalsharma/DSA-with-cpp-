@@ -8,11 +8,11 @@ class abstraction {
 
   public:
     // method to set value of private members
-    void value(int x, int y) {
+    void value(int x, int y){
         a = x;
         b = y;
     }
-    void display() {
+    void display(){
         cout << "The value of a = " << a << endl;
         cout << "The value of b = " << b << endl;
     }

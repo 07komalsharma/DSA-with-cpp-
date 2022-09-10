@@ -82,6 +82,6 @@ int main(){
     
     cout<<st.peek()<<endl;
     st.DisplayStack(st);
-
+ 
     return 0;
 }

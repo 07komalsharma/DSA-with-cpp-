@@ -11,8 +11,8 @@ int minSum(int arr1[],int arr2[],int n){
         result=result+arr1[i]*arr2[n-i-1];
     }
     return result;
-
 }
+
 
 int main(){
    int arr1[]={6, 1, 9, 5, 4};

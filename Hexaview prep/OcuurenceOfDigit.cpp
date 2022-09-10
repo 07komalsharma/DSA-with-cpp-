@@ -5,7 +5,6 @@ int digitSum(int n,int d){
     int ans=0;
     int itr=d;
 
-
     while(itr<=n){
     //if last digit is equal to d
     if(itr%10==d){
@@ -32,6 +31,7 @@ int digitSum(int n,int d){
     return ans;
 
 }
+
 int main(){
     int N=11;
     int d=1;

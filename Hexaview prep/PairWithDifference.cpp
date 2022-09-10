@@ -17,7 +17,7 @@ bool findPair(int arr[], int size, int n)
         if (diff == 2*n
             and l != r) 
         {
-            cout << "Pair Found: (" << arr[l] << ", "
+        cout << "Pair Found: (" << arr[l] << ", "
                  << arr[r] << ")";
             return true;
         }

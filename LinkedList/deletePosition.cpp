@@ -86,7 +86,7 @@ int main(){
     InsertAtTail(tail,60);
     print(head);
 
-    deleteNode(6,tail,head);
+    deleteNode(1,tail,head);
     print(head);
     print(tail);
 
