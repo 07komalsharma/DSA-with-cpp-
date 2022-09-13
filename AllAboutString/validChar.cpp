@@ -58,7 +58,7 @@ bool isPalindrome(string s){
 int main(){
    char ch[10]="komaljii";
    for(int i=0;i<10;i++){
-       if(valid(ch)){
+       if(valid(ch[i])){
            return 1;
        }
        return 0;

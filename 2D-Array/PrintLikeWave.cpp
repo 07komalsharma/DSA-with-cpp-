@@ -23,14 +23,19 @@ vector<int> waveprint(vector<vector<int> > arr,int n,int m){
 
 //......issue in function call
 int main(){
-    vector<vector<int>> vect
+    vector<vector<int>> vect=
     {
         {1, 2, 3},
         {4, 5, 6},
         {7, 8, 9}
     };
      for(int i=0;i<vect.size();i++){
-        cout<<vect[i];
+        for(int j=0;j<vect.size();j++){
+        cout<<vect[i][j];
+        }
+        cout<<endl;
      }
+     vector<int> ans=waveprint(vect,3,3);
+     
 return 0;
 }
