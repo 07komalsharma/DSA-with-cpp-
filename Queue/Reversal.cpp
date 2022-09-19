@@ -1,0 +1,43 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+queue<int> rev(queue<int> q);
+int main(){
+    int test;
+    cin>>test;
+    while(test--){
+        queue<int> q;
+        int n,var;
+        cin>>n;
+        while(n--){
+            cin>>var;
+            q.push(var);
+        }
+        queue<int> a=rev(q);
+        while(!a.empty()){
+            cout<<a.front()<<" ";
+            a.pop();
+
+        }
+        cout<<endl;
+    }
+}
+queue<int> rev(queue<int> q)
+{
+    stack<int> s;
+    //jb tk queue khali na ho stack me daalo
+    while(!q.empty()){
+        int element=q.front();
+        q.pop();
+        s.push(element);
+    }
+    
+    //stack se wapis queue me daalo
+    while(!s.empty()){
+        int element=s.top();
+        s.pop();
+        q.push(element);
+    }
+    return q;
+    
+}
