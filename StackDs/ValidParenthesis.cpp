@@ -12,6 +12,7 @@ bool isValidParenthesis(string expression){
         if(ch =='{' || ch == '[' || ch == '('){
             s.push(ch);
         }
+        //check at each step while pushing if closing brace are their then compare it with a top
         else{
             //for closing bracket
             if(!s.empty()){
@@ -44,7 +45,7 @@ int main(){
    if (isValidParenthesis(str))
       cout << "This is Balanced Expression"<<endl;
    else
-      cout << "This is Not Balanced Expression"<<endl;;
+      cout << "This is Not Balanced Expression"<<endl;
     
 
 }
